@@ -1,0 +1,71 @@
+/**
+ * Program description : Write the complete definition for the Flower class based on the given scenario
+ * Progammer : Raja
+ * Date : 19/2/2024
+ */
+//Class definition
+public class Flower
+{
+    // Declaration of the attributes
+    private String name;
+    private String color;
+    private double price;
+    private int quantity;
+
+    // Constructor without parameter
+    public Flower() {
+        this.name = "Unknown";
+        this.color = "No color";
+        this.price = 0.0;
+        this.quantity = 0;
+    }
+    //Constructor with parameter
+    public Flower(String name, String color, double price, int quantity) {
+        this.name = name;
+        this.color = color;
+        this.price = price;
+        this.quantity = quantity;
+    }
+    
+    //getters
+    public String getName() {
+        return name;
+    }
+    
+    public String getColor(){
+        return color;
+    }
+    
+    public double getPrice(){
+        return price;
+    }
+    
+    public int getQuantity(){
+        return quantity;
+    }
+    
+    //setters
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public void setColor(String color){
+        this.color = color;
+    }
+    
+    public void setPrice(double price){
+        this.price = price;
+    }
+    
+    public void setQuantity(int quantity){
+        this.quantity = quantity;
+    }
+    
+    //toString()
+    public String toString(){
+        return "Flower Details:\n" +
+        "Name:" + name + "\n" +
+        "Price:" + price + "\n" +
+        "Quantity:" + quantity;
+    }   
+} 
